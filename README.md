@@ -36,7 +36,7 @@ users_list = wr.get_users_list(self)
 Get timelogs from project
 
 ```
-output = zr.get_all_project_timelogs('project_id', 'project_name', 'created_date'):
+output = zr.get_all_project_timelogs('project_id', 'project_name', 'created_date')
 
 ```
 
