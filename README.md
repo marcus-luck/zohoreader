@@ -1,9 +1,9 @@
-# zreader
-This project is intended to create a , returning a pandas DataFrame with 24h weather data from Wunderground.
+# zohoreader
+This project is intended to create an easy way to get all timelogs from zoho projects API.
 
 ### Information
 
-The package returns a dataframe
+The package returns a list of all timelogs. Can easily be converted to a Pandas DataFrame.
 
 
 ### Using
