@@ -47,12 +47,17 @@ class ZohoReader():
                 contents = json.loads(r_p.content)['projects']
 
                 for content in contents:
+                    if content['status'] == 'active':
+                        active = True
+                    else:
+                        active = False
 
                     project_list.append({'id':content['id'],
                                    'name':content['name'],
                                    'created_date':content['created_date'],
                                    'updated_date':content['updated_date'],
-                                   'owner_id':content['owner_id']})
+                                   'owner_id':content['owner_id']}
+                                   'status':active)
 
                 # Don't overload zoho's fragile API...
                 time.sleep(self.SLEEP_TIME)
